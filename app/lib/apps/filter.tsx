@@ -1,7 +1,7 @@
 import { use$ } from '@legendapp/state/react';
-import { ActionIcon, Button, Modal, RangeSlider, Space, TextInput } from '@mantine/core';
+import { ActionIcon, Button, Divider, Modal, RangeSlider, Space, TextInput, useMantineColorScheme } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { LuFilter, LuPlus } from 'react-icons/lu';
+import { LuFilter, LuMoon, LuPlus, LuSun } from 'react-icons/lu';
 
 import { view$ } from '~/lib/apps/apps';
 
@@ -23,6 +23,8 @@ function Filter() {
 	const rangeEnd = use$(view$.playerRangeEnd);
 	const genreList = use$(view$.genreList);
 	const selectedGenres = use$(view$.selectedGenres);
+	const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+
 	return (
 		<div className="fixed bottom-4 right-4 z-50">
 			<ActionIcon variant="filled" color="blue" size={55} radius="xl" onClick={open}>
@@ -31,7 +33,7 @@ function Filter() {
 			<Modal opened={opened} onClose={close} title="Filter" centered size="xl">
 
 				{/* Number of Players */}
-				<p className="text-sm font-medium">Number of Players</p>
+				<p className="text-sm font-bold">Number of Players</p>
 				<Space h="xs" />
 				<RangeSlider
 					value={[rangeStart, rangeEnd]}
@@ -48,9 +50,10 @@ function Filter() {
 					minRange={0}
 				/>
 				<Space h="xl" />
+				<Divider my="xs" />
 
 				{/* Genre */}
-				<p className="text-sm font-medium">Genres</p>
+				<p className="text-sm font-bold">Genres</p>
 				<div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
 					{genreList.map(genre => (
 						<div
@@ -63,7 +66,7 @@ function Filter() {
 								}
 							}}
 							className={`
-								cursor-pointer rounded-md border border-solid border-nintendo-border p-2 text-center text-sm transition-colors duration-200
+								cursor-pointer rounded-md border border-solid border-nintendo-border p-2 text-center text-xs transition-colors duration-200
 								${selectedGenres.includes(genre)
 							? 'border-none bg-[var(--mantine-color-blue-filled)] text-white'
 							: ''
@@ -74,7 +77,13 @@ function Filter() {
 						</div>
 					))}
 				</div>
-				<Space h="xs" />
+
+				{/* Theme */}
+				<Divider my="sm" />
+				<Button size="xs" fullWidth variant="light" onClick={() => toggleColorScheme()} leftSection={colorScheme === 'dark' ? <LuMoon size={16} /> : <LuSun size={16} />}>
+					{colorScheme === 'dark' ? 'Dark Theme' : 'Light Theme'}
+				</Button>
+
 			</Modal>
 		</div>
 	);

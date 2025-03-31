@@ -13,8 +13,8 @@ import testApps from '~/lib/test/apps.json';
 
 export const meta: MetaFunction = () => {
 	return [
-		{ title: 'Switch Remote Launcher' },
-		{ name: 'description', content: 'Switch Remote Launcher' },
+		{ title: 'NX Remote Launcher' },
+		{ name: 'description', content: 'NX Remote Launcher' },
 	];
 };
 
@@ -49,8 +49,8 @@ export default function Index() {
 		<Client>
 			<div className="flex h-dvh w-dvw flex-col items-center">
 				<Header />
-				<Space h="xs" />
-				<Search />
+				{/* <Space h="xs" /> */}
+				{/* <Search /> */}
 				<Filter />
 
 				{/* Body */}
