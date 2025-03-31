@@ -1,5 +1,7 @@
 {
 	"name": "switch-remote-launcher",
+	"version": "0.1.2",
+	"author": "Kiran Kunigiri",
 	"private": true,
 	"sideEffects": false,
 	"type": "module",
