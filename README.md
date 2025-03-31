@@ -1,3 +1,7 @@
+
+![NX Remote Launcher Logo](https://i.imgur.com/GcEIFSo.png)
+![Feature Banner](https://i.imgur.com/Bfbe2QF.png)
+
 # NX Remote Launcher
 A Nintendo Switch homebrew app to browse, filter, and launch Switch games from your phone.
 
