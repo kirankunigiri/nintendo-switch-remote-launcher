@@ -5,8 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "node dev.js",
-		"build": "remix vite:build && rm -rf romfs && esbuild --bundle --sourcemap --sources-content=false --target=es2022 --define:DEV_MODE=false --format=esm src/main.ts --outfile=romfs/main.js && cp -r build/client romfs/public",
-		"build:dev": "remix vite:build && rm -rf romfs && esbuild --bundle --sourcemap --sources-content=false --target=es2022 --define:DEV_MODE=true --format=esm src/main.ts --outfile=romfs/main.js && cp -r build/client romfs/public",
+		"build": "remix vite:build && rm -rf romfs && esbuild --bundle --sourcemap --sources-content=false --target=es2022 --define:DEV_MODE=false --format=esm src/main.tsx --outfile=romfs/main.js && cp -r build/client romfs/public",
+		"build:dev": "remix vite:build && rm -rf romfs && esbuild --bundle --sourcemap --sources-content=false --target=es2022 --define:DEV_MODE=true --format=esm src/main.tsx --outfile=romfs/main.js && cp -r build/client romfs/public",
 		"nro": "nxjs-nro",
 		"nsp": "nxjs-nsp",
 		"start": "remix-serve ./build/server/index.js",
@@ -60,6 +60,7 @@
 		"globals": "^15.13.0",
 		"nxjs-runtime": "^0.0.50",
 		"postcss": "^8.4.38",
+		"react-tela": "^0.0.3",
 		"tailwindcss": "^3.4.4",
 		"typescript": "^5.7.2",
 		"typescript-eslint": "^8.13.0",
