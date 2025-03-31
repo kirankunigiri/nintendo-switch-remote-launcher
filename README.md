@@ -1,5 +1,5 @@
-# switch-remote-launcher
-Browser and launch apps on your switch remotely
+# nx-remote-launcher
+A Nintendo Switch homebrew app to browse, filter, and launch Switch games from your phone.
 
 ### Libraries
 - 📖 [Remix docs](https://remix.run/docs)
@@ -11,16 +11,20 @@ Browser and launch apps on your switch remotely
 Open the app on your Switch, and scan the QR code to view your apps.
 ![Switch Screenshot](https://i.imgur.com/aEJBxTN.jpeg)
 
-View your games and tap to launch.
+View your game library.
 
-<img src="https://i.imgur.com/98Q08GA.jpeg" width="300">
+<img src="https://i.imgur.com/xLKITWI.jpeg" width="300">
 
 Filter by genre and player count.
 
-<img src="https://i.imgur.com/55ZtKF4.jpeg" width="300">
+<img src="https://i.imgur.com/JS4atJz.jpeg" width="300">
+
+View game details and tap to launch.
+
+<img src="https://i.imgur.com/MTkYNA9.jpeg" width="300">
 
 ---
-### Development
+### Development - Switch
 
 The development server mode involves running the Remix server .nro file on the Switch, while also running the "dev" script on your local machine:
 
@@ -40,6 +44,16 @@ bun run nro
 # IMPORTANT: Replace with your own Switch's IP address
 bun run dev http://192.168.86.103:8080
 ```
+
+---
+### Development - Web Only
+
+You don't need to have a Switch to develop! You can run the web version which will automatically use test game data from a json file in `app/lib/test/apps.json`. All of the data fetching and UI is created in the remix react app, so you can work on most of the functionality of the app. Only the "launch game" feature requires having a switch to test.
+
+```sh
+bun run dev:web
+```
+
 ---
 ### Generate a production `.nro`
 
