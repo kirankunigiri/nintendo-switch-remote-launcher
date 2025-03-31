@@ -67,7 +67,7 @@ function Apps({ apps }: AppsProps) {
 	};
 
 	return (
-		<div className="grid w-full grid-cols-[repeat(auto-fit,minmax(80px,1fr))] gap-2 p-2">
+		<div className="grid w-full grid-cols-[repeat(auto-fit,minmax(80px,1fr))] gap-2 p-2 pt-[44px]">
 			{filteredApps.map(app => (
 				<AppItem key={app.id} app={app} />
 			))}
@@ -176,12 +176,12 @@ function AppItem({ app }: { app: App }) {
 			className="flex cursor-pointer flex-col items-center"
 			onClick={() => view$.selectedApp.set(app)}
 		>
-			<div className="relative flex aspect-square w-full items-center justify-center border border-nintendo-border bg-nintendo-bg">
+			<div className="relative flex aspect-square w-full items-center justify-center rounded-lg border border-nintendo-border bg-nintendo-bg">
 				{!imageError && (
 					<img
 						src={`https://tinfoil.media/ti/${titleId}/${IMAGE_RES_STR}`}
 						alt={app.name}
-						className="size-full object-cover"
+						className="size-full rounded-md object-cover"
 						onError={() => setImageError(true)}
 					/>
 				)}

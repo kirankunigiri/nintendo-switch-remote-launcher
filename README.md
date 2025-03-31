@@ -14,7 +14,7 @@ Open the app on your Switch, and scan the QR code to view your games.
       <td colspan="3"><img src="https://i.imgur.com/aEJBxTN.jpeg"></img></td>
   </tr>
   <tr align="center">
-      <td><img src="https://i.imgur.com/xLKITWI.jpeg"></img></td>
+      <td><img src="https://i.imgur.com/oCxk0tS.jpeg"></img></td>
       <td><img src="https://i.imgur.com/JS4atJz.jpeg"></img></td>
       <td><img src="https://i.imgur.com/MTkYNA9.jpeg"></img></td>
   </tr>

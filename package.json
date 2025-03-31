@@ -2,6 +2,9 @@
 	"name": "nx-remote-launcher",
 	"version": "1.0.1",
 	"author": "Kiran Kunigiri",
+	"nacp": {
+		"title": "NX Remote Launcher"
+	},
 	"private": true,
 	"sideEffects": false,
 	"type": "module",
