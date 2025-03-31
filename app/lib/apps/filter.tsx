@@ -63,11 +63,10 @@ function Filter() {
 								}
 							}}
 							className={`
-								cursor-pointer rounded-md p-2 text-center text-sm
-								transition-colors duration-200
+								cursor-pointer rounded-md border border-solid border-nintendo-border p-2 text-center text-sm transition-colors duration-200
 								${selectedGenres.includes(genre)
-							? 'bg-blue-500 text-white'
-							: 'bg-gray-100 hover:bg-gray-200'
+							? 'border-none bg-[var(--mantine-color-blue-filled)] text-white'
+							: ''
 						}
 							`}
 						>
