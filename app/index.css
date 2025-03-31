@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	/* Custom Colors */
+	--nintendo-bg-dark: #2D2D2D;
+	--nintendo-bg-light: #EBEBEB;
+	--nintendo-bg: light-dark(var(--nintendo-bg-light), var(--nintendo-bg-dark));
+
+	--nintendo-border-light: #d0d0d0;
+	--nintendo-border-dark: #504F4E;
+	--nintendo-border: light-dark(var(--nintendo-border-light), var(--nintendo-border-dark));
+}

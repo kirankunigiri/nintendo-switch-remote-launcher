@@ -1,0 +1,18 @@
+# Project
+/*.nro
+/*.nsp
+/node_modules
+/romfs/main.js
+/romfs/main.js.map
+/romfs/public
+/build
+
+# Other
+.DS_Store
+.vscode
+
+# Remix
+node_modules
+/.cache
+/build
+.env
