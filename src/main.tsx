@@ -143,7 +143,7 @@ function App() {
 				y={SCREEN_HEIGHT - 30}
 				fontSize={18}
 			>
-				v2.0.0-f8db4d0
+				v0.1.0
 			</Text>
 
 			<Text

@@ -5,6 +5,20 @@ Browser and launch apps on your switch remotely
 - 📖 [Remix docs](https://remix.run/docs)
 - [nx.js docs](https://github.com/TooTallNate/remix-nxjs)
 
+
+### Screenshots
+
+Open the app on your Switch, and scan the QR code to view your apps.
+![Switch Screenshot](https://i.imgur.com/aEJBxTN.jpeg)
+
+View your games and tap to launch.
+
+<img src="https://i.imgur.com/98Q08GA.jpeg" width="300">
+
+Filter by genre and player count.
+
+<img src="https://i.imgur.com/55ZtKF4.jpeg" width="300">
+
 ---
 ### Development
 
