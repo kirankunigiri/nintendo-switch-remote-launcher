@@ -1,6 +1,6 @@
 {
-	"name": "switch-remote-launcher",
-	"version": "0.1.2",
+	"name": "nx-remote-launcher",
+	"version": "1.0.1",
 	"author": "Kiran Kunigiri",
 	"private": true,
 	"sideEffects": false,
