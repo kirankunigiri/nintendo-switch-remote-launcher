@@ -90,3 +90,7 @@ Place the `.nro` file onto your Switch's SD card inside the "switch" directory, 
   * `author`
 * Set the `titleId` property in `package.json` to a random 16 digit hex string (example: `012a792e7a730000`)
   * This allows your app to access Save Data via `localStorage` in `loader()`/`action()` functions
+
+
+# NXRL Playnite Support
+If you want to be able to launch games through playnite as any normal game, check out this cool project that utilises [NX Remote Launcher Support for Playnite](https://github.com/Yeetov/NXRLPlayniteSupport).
